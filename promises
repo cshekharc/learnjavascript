@@ -1,0 +1,7 @@
+//promise - 3 states pending, fulfilled, rejected
+// .then()
+// .try()
+// .catch()
+// throw
+// async
+// await
