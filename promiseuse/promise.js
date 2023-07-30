@@ -39,19 +39,19 @@
 //     console.log("please execute after promise")
 // })
 
-new Promise(function(resolve, reject) {
-    setTimeout(function(){
-        let err = false
-        if(!err){
-            console.log("this is in reject")
-            reject()
-        }else{
-            console.log("this is resolved");
-            resolve()
-        }
-    })
-}).then(function(){
-    console.log("please wait...")
-}).catch(function(){
-    console.log("it is rejected")
-})
+// new Promise(function(resolve, reject) {
+//     setTimeout(function(){
+//         let err = false
+//         if(!err){
+//             console.log("this is in reject")
+//             reject()
+//         }else{
+//             console.log("this is resolved");
+//             resolve()
+//         }
+//     })
+// }).then(function(){
+//     console.log("please wait...")
+// }).catch(function(){
+//     console.log("it is rejected")
+// })

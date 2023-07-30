@@ -38,26 +38,44 @@ const promise2 = new Promise((resolve, reject) => {
     }, 1000)
 })
 
-let user1 = promise2.then(function(user){
-    console.log(user)
-    return user.useName
-}).then(function(useName){
-    console.log(useName)
-}).catch(function(error){
-    console.log(error)
-}).finally(function(){
-    console.log("promise is completed")
-})
+// let user1 = promise2.then(function(user){
+//     console.log(user)
+//     return user.useName
+// }).then(function(useName){
+//     console.log(useName)
+// }).catch(function(error){
+//     console.log(error)
+// }).finally(function(){
+//     console.log("promise is completed")
+// })
 // console.log(user1)
 
 // console.log(user1)
 
-// async function promise3(){
-//     try {
-//         const response = await promise2
-//         console.log(response);
-//     }catch (error) {
-//         console.log(error);   
-//     }
+async function promise3(){
+    try {
+        const response = await promise2
+        console.log(response);
+    }catch (error) {
+        console.log(error);   
+    }
+}
+promise3()
+
+// function fname() {
+//     return new Promise(function (resolve, reject) {
+//         setTimeout(function () {
+//             let err = true;
+//             if (!err) {
+//                 resolve({ useName: "myself", passowrd: "11122" })
+//             } else {
+//                 reject("Error: Something went wrong")
+//             }
+//         }, 1000)
+//     })
 // }
-// promise3()
+// fname().then(function(rt){
+//     console.log(rt)
+// }).catch(function (er){
+//     console.log(er);
+// })
